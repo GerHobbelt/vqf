@@ -11,11 +11,13 @@
 #include <stdlib.h>
 #include <inttypes.h>
 #include <time.h>
+#if !defined(_WIN32)
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include <pthread.h>
 #include <openssl/rand.h>
+#endif
 
 #include "vqf_filter.h"
 
