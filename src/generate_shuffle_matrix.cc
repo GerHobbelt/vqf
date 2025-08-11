@@ -137,7 +137,9 @@ void generate_shuffle_512(void) {
    shuffle_matrix << "};\n";
 }
 
+#undef SHUFFLE_SIZE 
 #define SHUFFLE_SIZE 32
+
 void generate_shuffle_512_16(void) {
    std::ofstream shuffle_matrix("src/shuffle_matrix_512_16.c");
 
