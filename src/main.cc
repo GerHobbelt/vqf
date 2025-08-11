@@ -17,7 +17,9 @@
 #include <immintrin.h>  // portable to all x86 compilers
 #include <tmmintrin.h>
 #include <openssl/rand.h>
+#if !defined(_WIN32)
 #include <sys/time.h>
+#endif
 
 #include <set>
 

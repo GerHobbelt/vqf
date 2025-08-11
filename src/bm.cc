@@ -22,10 +22,14 @@
 #include <math.h>
 #include "random_r.h"
 #include <string.h>
+#if !defined(_WIN32)
 #include <sys/time.h>
+#endif
 #include <sys/types.h>
 #include <time.h>
+#if !defined(_WIN32)
 #include <unistd.h>
+#endif
 
 #include "vqf_wrapper.h"
 

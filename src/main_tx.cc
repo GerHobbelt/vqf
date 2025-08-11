@@ -15,9 +15,9 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
+#endif
 #include <pthread.h>
 #include <openssl/rand.h>
-#endif
 
 #include "vqf_filter.h"
 
